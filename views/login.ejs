@@ -1,0 +1,11 @@
+<%- include('header'); -%>
+<h1>Page Principale</h1>
+<p>Bienvenue <%= Prenom %> <%= Nom %></p>
+<h2>Votre prénom est : <%= Prenom %></h2>
+<h2>Votre nom est : <%= Nom %></h2>
+<h2>Votre code postal est : <%= codePostal %></h2>
+<a href = '/formulaire'>Lien vers le formulaire.</a>
+<form action="/goodbye" method="post">
+ <button class="btn btn-primary">Déconnexion</button>
+</form>
+<%- include('footer') -%>
